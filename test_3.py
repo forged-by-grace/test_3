@@ -23,9 +23,12 @@ def detect_memory():
 
     # Process the file 
     result = process_file(file=file)
-    print(result)
+    
+    # Save image path
+    result_img_path = f"{result[0].save_dir}\{result[0].path}"
+    
     # Return the result
-    return jsonify({'result': 'success', 'image_path': 'ok'})
+    return jsonify({'result': 'success', 'image_path': result_img_path})
 
 
 def process_file(file):
