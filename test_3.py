@@ -34,7 +34,7 @@ def process_file(file):
 
     # from ndarray
     im2 = cv2.imread(file)
-    results = model.predict(source=im2, save=True, save_txt=True)  # save predictions as labels
+    results = model.predict(source=im2, save=True, save_txt=True, conf=0.9)  # save predictions as labels
 
     return results
 
