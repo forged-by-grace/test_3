@@ -1,0 +1,6 @@
+train: C:\Users\ENGRACED\Documents\Project\flask\test-3\train
+val: C:\Users\ENGRACED\Documents\Project\flask\test-3\value
+
+nc: 1
+
+names: ["RAM"]
